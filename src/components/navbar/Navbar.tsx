@@ -73,7 +73,7 @@ export default function Navbar() {
     <div className="z-10 fixed w-full h-20 flex items-center justify-center backdrop-blur-xl">
       <div className="relative max-w-5xl w-full h-full py-16 px-4 md:px-8 lg:p-2 flex justify-between items-center transition-all">
         <a href="#home" className="h-20 text-white bs-rg flex justify-center items-center">
-          <h1 className="text-2xl lg:text-3xl mb-2 ml-2 md:ml-0">bp</h1>
+          <h1 className="text-3xl mb-2 ml-2 md:ml-0">bp</h1>
         </a>
         <div className="relative flex items-center space-x-8">
           <ContactButton link={links[0]} Icon={Github}/>

@@ -2,7 +2,7 @@ export default function ButterflySkill({ name, rate }: { name: string, rate: num
   return (
     <div
       key={"tech_" + name}
-      className="relative flex justify-center items-center pt-mono-rg space-x-4 my-8 w-full" 
+      className="relative flex justify-center items-center pt-mono-rg space-x-4 my-8 w-full lg:w-fit" 
     >
       <img
         src={`/icons/technologies/${name}.svg`}
