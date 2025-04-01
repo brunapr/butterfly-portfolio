@@ -29,8 +29,7 @@ function App() {
       <Navbar />
       {
         sections.map(({ id, component }, index) => (
-          <div key={id}>
-            {/* <div id={id} /> */}
+          <div key={"section_"+id}>
             {component}
             {index !== 0 && <Divider />}
           </div>
