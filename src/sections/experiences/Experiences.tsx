@@ -68,8 +68,8 @@ export default function Experiences() {
   ]
 
   return (
-    <section className="z-[0] w-screen h-fit pb-24 pt-6 flex flex-col items-center justify-center relative bg-slate-900">
-      <Container className="flex flex-col items-center space-y-12 md:space-y-16 lg:space-y-24">
+    <section className="z-[0] w-screen h-fit pb-10 md:pb-24 pt-0 md:pt-6 flex flex-col items-center justify-center relative bg-slate-900">
+      <Container className="flex flex-col items-center pt-8 md:pt-24 space-y-12 md:space-y-16 lg:space-y-24">
         <Title ref={refTitle} inView={inViewTitle} title="experiences"/>
         <div 
           ref={refList} 

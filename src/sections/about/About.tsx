@@ -9,8 +9,8 @@ export default function About() {
   const [refImage, inViewImage] = useInView({ triggerOnce: true });
 
   return (
-    <section className="z-[0] w-screen h-fit pb-24 flex flex-col items-center justify-center relative text-slate-200 pt-mono-rg">
-      <Container className="flex flex-col pt-2 space-y-6 md:space-y-12 w-full justify-between items-center">
+    <section className="z-[0] w-screen h-fit pb-10 md:pb-24 pt-0 flex flex-col items-center justify-center relative text-slate-200 pt-mono-rg">
+      <Container className="flex flex-col pt-0 md:pt-24 space-y-6 md:space-y-12 w-full justify-between items-center">
         <Title ref={refTitle} inView={inViewTitle} title="about me"/>
         <div className="lg:w-[65%] text-justify flex flex-col space-y-10 items-center">
           <div 

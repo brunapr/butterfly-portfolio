@@ -19,8 +19,8 @@ export default function Technologies() {
   ]
 
   return (
-    <section className="z-[0] w-screen h-fit pb-20 pt-6 flex flex-col items-center justify-center relative bg-slate-900">
-      <Container className="flex flex-col space-y-6 md:space-y-12 lg:space-y-24 items-center ">
+    <section className="z-[0] w-screen h-fit pb-10 md:pb-20 pt-0 md:pt-6 flex flex-col items-center justify-center relative bg-slate-900">
+      <Container className="flex flex-col space-y-6 pt-8 md:pt-24 md:space-y-12 lg:space-y-24 items-center ">
         <Title ref={refTitle} inView={inViewTitle} title="technologies"/>
         <div 
           ref={refList} 
