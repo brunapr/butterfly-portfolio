@@ -38,7 +38,7 @@ export default function Home({scroll}: {scroll: number}) {
 				className="w-full max-w-5xl h-screen absolute overflow-visible mb-32 lg:mb-20 transition-all surge-1">
 				{butterflies.map((butterfly) => (
 					<Butterfly
-						key={butterfly.id}
+						key={"butterfly_"+butterfly.id}
 						butterfly={butterfly}
 					/>
 				))}

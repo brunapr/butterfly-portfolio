@@ -89,7 +89,7 @@ export default function Navbar() {
             {
               menuLinks.map((name: string) => {
                 return(
-                  <DropdownItem name={name} setClick={setClick}/>
+                  <DropdownItem key={"dropdown_"+name} name={name} setClick={setClick}/>
                 );
               })
             }

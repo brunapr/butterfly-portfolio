@@ -25,7 +25,7 @@ export default function Technologies() {
         <div 
           ref={refList} 
           className={`${inViewList ? "surge-1" : ""} 
-          w-full justify-center lg:w-fit flex flex-col md:flex-row flex-wrap lg:justify-between opacity-0`}
+          w-full justify-center items-center lg:w-fit flex flex-col lg:flex-row flex-wrap lg:justify-between opacity-0`}
         >
           {
             techs.map(({ name, rate }) => {

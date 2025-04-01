@@ -11,7 +11,7 @@ export default function ButterflyExperience({ experience }: { experience: Experi
       </div>
       <div className="flex flex-col">
         <h1 className="text-2xl text-fuchsia-600 pt-1 font-bold">{title}</h1>
-        <div className="flex space-x-4 items-center ">
+        <div className="flex flex-col md:flex-row space-x-4 md:items-center">
           <h2 className="italic text-slate-400">{subtitle}</h2>
           <span className="text-slate-600">| {time}</span>
         </div>
@@ -19,7 +19,7 @@ export default function ButterflyExperience({ experience }: { experience: Experi
           {
             list.map((item: string, index) => {
               return (
-                <div key={"list_item_" + index} className="flex space-x-4">
+                <div key={"experience_" + index} className="flex space-x-4">
                   <span>•</span>
                   <span>{item}</span>
                 </div>
