@@ -1,3 +1,14 @@
+function SkillIcon({ active }: {active: boolean}) {
+  return(
+    <img 
+      src="/icons/butterfly/btf-icon.svg" 
+      alt="Ícone de habilidade" 
+      className={`w-4 ${active ? '' : 'opacity-40'}`}
+      aria-hidden="true"
+    />
+  );
+}
+
 export default function ButterflySkill({ name, rate }: { name: string, rate: number }) {
   return (
     <div
@@ -10,14 +21,22 @@ export default function ButterflySkill({ name, rate }: { name: string, rate: num
         className={`${name === "figma" ? "scale-85" : ""} object-fit h-full size-4 slate`}
       />
       <span className="capitalize text-slate-200 font-bold w-28">{name}</span>
-      <div className="flex space-x-2 w-[100%-112px]">
-        {
-          Array.from({ length: 10 }).map((_, index) => {
-            return (
-              <img key={"skill_" + index} src="/icons/butterfly/btf-icon.svg" alt="butterfly skill" className={`${rate <= index ? "opacity-40" : ""} w-2 md:w-4`} />
-            );
-          })
-        }
+      <div className="hidden md:flex gap-2">
+        {Array.from({ length: 10 }).map((_, index) => (
+          <SkillIcon 
+            key={`skill_${index}`}
+            active={rate > index}
+          />
+        ))}
+      </div>
+
+      <div className="flex md:hidden gap-2">
+        {Array.from({ length: 5 }).map((_, index) => (
+          <SkillIcon 
+            key={`skill_mobile_${index}`}
+            active={rate/2 > index}
+          />
+        ))}
       </div>
     </div>
   );
