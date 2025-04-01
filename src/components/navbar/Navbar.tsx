@@ -76,8 +76,8 @@ export default function Navbar() {
           <h1 className="text-3xl mb-2 ml-2 md:ml-0">bp</h1>
         </a>
         <div className="relative flex items-center space-x-8">
-          <ContactButton link={links[0]} Icon={Github}/>
-          <ContactButton link={links[1]} Icon={Linkedin}/>
+          <ContactButton link={links[1]} Icon={Github}/>
+          <ContactButton link={links[0]} Icon={Linkedin}/>
           <button
             onClick={() => { setClick(!click) }}
             className="menu z-[3] relative"
