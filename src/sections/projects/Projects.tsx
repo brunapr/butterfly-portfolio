@@ -27,8 +27,8 @@ export default function Projects() {
   ]
 
   return (
-    <section className="z-[0] w-screen h-fit pb-24 pt-6 flex flex-col items-center justify-center relative bg-slate-900">
-      <Container className="flex flex-col items-center space-y-12 md:space-y-16 lg:space-y-24">
+    <section className="z-[0] w-screen h-fit pt-0 pb-10 md:pb-24 md:pt-6 flex flex-col items-center justify-center relative bg-slate-900">
+      <Container className="flex flex-col items-center pt-8 md:pt-24 space-y-12 md:space-y-16 lg:space-y-24">
         <Title ref={refTitle} inView={inViewTitle} title="projects"/>
         <div ref={refList} className={`${inViewList ? "surge-1" : ""} w-full max-w-2xl grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 opacity-0`}>
           {
