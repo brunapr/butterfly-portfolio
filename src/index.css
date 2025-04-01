@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+* {
+  scrollbar-width: none; 
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.bs-rg {
+  font-family: "Berkshire Swash", serif;
+}
+
+.pt-mono-rg {
+  font-family: "PT Mono", monospace;
+}
+
+.slate {
+  filter: brightness(0) saturate(100%) invert(97%) sepia(5%) saturate(969%) hue-rotate(180deg) brightness(97%) contrast(93%);
+}
+
+.surge-0 {
+  animation: surge 0.5s forwards ease-out;
+}
+
+.surge-1 {
+  animation: surge 1s forwards ease-in-out;
+}
+
+@keyframes surge {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}

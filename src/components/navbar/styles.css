@@ -1,0 +1,30 @@
+.menu {
+  height: 76px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  margin-top: 4px;
+  margin-right: 0px !important;
+  cursor: pointer
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.left-line {
+  margin: -4px;
+  transform: rotate(45deg);
+}
+
+.right-line {
+  margin: 0px;
+  transform: rotate(-45deg);
+}
